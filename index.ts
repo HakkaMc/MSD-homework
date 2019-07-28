@@ -1,6 +1,8 @@
 import { server } from './server/server';
 
+const port: string | number = process.env.PORT || 4242;
+
 // Start server
-server.listen(4242, (): void => {
-    console.log('Server started at 4242 port');
+server.listen(port, (): void => {
+    console.log(`Server started at ${port} port`);
 });

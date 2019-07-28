@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "start": "ts-node-dev --respawn --transpileOnly ./index.ts",
+    "start": "PORT=4242 ts-node-dev --respawn --transpileOnly ./index.ts",
     "test": "jest --detectOpenHandles",
     "test:watch": "npm run test --watch",
     "lint:fix": "eslint \"./server/**/*.ts\" \"index.ts\" --cache --ignore-path .gitignore --fix"
